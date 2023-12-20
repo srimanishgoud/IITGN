@@ -1,0 +1,358 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-color: maroon;
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+}
+#header-nav{
+    background-color: #222;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo{
+    background: url(/output.png) no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px 5px 0px;
+}
+nav a{
+    float: left;
+    padding: 10px 10px 10px 10px;
+}
+
+.navbar-brand{
+    padding-top: 50px;
+    font-size: 1.2em;
+}
+
+.navbar-brand h1{
+    color: red;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.navbar-brand a:hover{
+    text-decoration: none;
+}
+
+.horizontal-list{
+    list-style: none;
+    text-align:center;
+    float: right;
+}
+#nav-list{
+    margin-top: 10px;
+}
+
+#navlist a{
+    color: maroon;
+    text-align: center;
+}
+
+#navlist img{
+    text-align: center;
+}
+#navlist a:hover{
+    background: black;
+}
+
+#phone{
+    margin-top: 0px;
+}
+
+#phone a{
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+div ul{
+    /* text-align: right; */
+    /* margin-left: 200px; */
+    /* margin-right:-80px; */
+    float: right;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div ul li
+{
+    display:inline-block;
+    margin: 0px 10px;
+    /* line-height: 80px; */
+    orientation: horizontal fixed;
+}
+
+div a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+div ul a.active, a:hover{
+    border: 1px solid white;    
+    transition: .5s;
+}
+
+#icon{
+    color:white;
+    font-size: 30px;
+}
+.menu-button{
+    display: none;
+}
+@media (min-width: 1200px){
+    .jumbotron{
+        background: url(/jumbotron.jpeg);
+        box-shadow: 0 0 25px black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin-top: 20px;
+        border: 2px solid black;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    #logo{
+        background: url(output100.png) no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+    }
+    .jumbotron{
+        background: url(/jumbotron.jpeg);
+        box-shadow: 0 0 25px black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 75vh;
+        margin-top: 20px;
+        border: 2px solid black;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+
+
+    .vis{
+        background-color: white;
+        width: 100%
+    }
+    .panel-footer section{
+        text-align: center;
+    }
+    .panel-footer section hr{
+        width: 50%;
+    }
+    .space{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:767px){
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1{
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    .jumbotron{
+        background: url(/jumbotron.jpeg);
+        box-shadow: 0 0 25px black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 55vh;
+        margin-top: 20px;
+        border: 2px solid black;
+    }
+    .vis{
+        background-color: white;
+        width: 100%
+    }
+    .panel-footer section{
+        text-align: center;
+    }
+    .panel-footer section hr{
+        width: 50%;
+    }
+    .space{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+#greeting{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: 1px 1px 1px #ccc;
+    color: white;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 15px black;
+    width: 100%;
+    height: 75%;
+}
+
+div p{
+    text-align: center;
+}
+.description{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+    margin-top:-15px;
+    margin-bottom: 20px;
+}
+
+#menu-tile, #bus-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position:relative;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #bus-tile:hover, #map-tile:hover{
+    box-shadow: 0 0 15px black;
+}
+
+#menu-tile {
+    background: url(/Food.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+#bus-tile {
+    background: url(/bus.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-tile span, #bus-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1.4em;
+    text-align: center;
+    opacity: 1;
+}
+
+#developer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+#developer img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid lightyellow;
+}
+
+.developer-details{
+    margin-left: 30px;
+}
+
+#quotes, #hours, #developer{
+    color: white;
+}
+
+#quotes{
+    font-style: italic;
+}
+.panel-footer{
+    background-color: #222;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    border-top: 0;
+}
+
+#hours>span, #quotes>span, #developer div span{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    text-shadow: 1px 1px 1px #ccc;
+    color: white;
+}
+.dayita{
+    font-style: italic;
+}
+
+
+.sidebar{
+    align-content: center;
+    position:fixed;
+    top: 0;
+    right:0;
+    height:100vh;
+    width:350px;
+    z-index: 999;
+    background-color: transparent;
+    backdrop-filter: blur(10px); 
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+}
+
