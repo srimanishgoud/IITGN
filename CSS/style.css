@@ -16,7 +16,7 @@ body{
 }
 
 #logo{
-    background: url(../output.png) no-repeat;
+    background: url(output.png) no-repeat;
     width: 150px;
     height: 150px;
     margin: 5px 5px 5px 0px;
@@ -56,6 +56,9 @@ nav a{
 #navlist a{
     color: maroon;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
 #navlist img{
@@ -119,7 +122,7 @@ div ul a.active, a:hover{
 }
 @media (min-width: 1200px){
     .jumbotron{
-        background: url(../jumbotron.jpeg);
+        background: url(jumbotron.jpeg);
         box-shadow: 0 0 25px black;
         background-size: cover;
         background-repeat: no-repeat;
@@ -131,13 +134,13 @@ div ul a.active, a:hover{
 
 @media (min-width: 768px) and (max-width: 1199px){
     #logo{
-        background: url(../output100.png) no-repeat;
+        background: url(output100.png) no-repeat;
         width: 100px;
         height: 100px;
         margin: 5px 5px 5px 0px;
     }
     .jumbotron{
-        background: url(../jumbotron.jpeg);
+        background: url(jumbotron.jpeg);
         box-shadow: 0 0 25px black;
         background-size: cover;
         background-repeat: no-repeat;
@@ -179,7 +182,7 @@ div ul a.active, a:hover{
         font-size: 5vw;
     }
     .jumbotron{
-        background: url(../jumbotron.jpeg);
+        background: url(jumbotron.jpeg);
         box-shadow: 0 0 25px black;
         background-size: cover;
         background-repeat: no-repeat;
@@ -257,14 +260,14 @@ div p{
 }
 
 #menu-tile {
-    background: url(../Food.jpg) no-repeat;
+    background: url(Food.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-size: cover;
 }
 
 #bus-tile {
-    background: url(../bus.png) no-repeat;
+    background: url(bus.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-size: cover;
@@ -301,7 +304,7 @@ div p{
 }
 
 .developer-details{
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 #quotes, #hours, #developer{
